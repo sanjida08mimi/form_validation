@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <!-- css links -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col margin_top">
+        <h3 class="custom_header">Grow your business with us!</h3>
+        <img src="images/grow_b.jpg" alt="banner">
+       </div>
+      <div class="col margin_top">
+        <form class="row needs-validation" novalidate>
+          <div class="col-md-10 ">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control input_field_custom " name="name" id="name" placeholder="Enter your name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Name must be filled out
+            </div>
+          </div>
+          <div class="col-md-10">
+            <label for="username" class="form-label">Username</label> 
+            <div class="input-group has-validation">
+              <span class="input-group-text input_field_custom" id="inputGroupPrepend">@</span> 
+              <input type="text" class="form-control input_field_custom" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            
+            <label for="c_name" class="form-label">Company</label>
+            <input type="text" class="form-control input_field_custom" id="c_name" placeholder="Enter your company name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your company name.
+            </div>
+          </div>
+    
+          <div class="col-md-10">
+            <label for="validationCustom04" class="form-label">Category</label>
+            <select class="form-select input_field_custom" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>C Corporation</option> 
+              <option>S Corporation</option> 
+              <option>Non-Profit Corporation</option> 
+            </select>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please select a valid category.
+            </div>
+          </div>
+          <div class="col-md-10">
+            <label for="phone_num" class="form-label">Phone</label>
+            <input type="tel" class="form-control input_field_custom" id="phone_num" placeholder="Enter your phone number" required>
+            <div class="invalid-feedback">
+              Please provide a valid phone number.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check input_field_custom">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 input_field_custom">
+            <button class="btn btn-outline-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="scnd_part margin_top">
+    <h3 class="custom_header">Your expertise could make a big difference on our team—ready to join us as a Consultant? <br>
+    Fill out the form below...</h3>
+  </div>
+  <form class="row g-3 margin_top">
+    <div class="col-12">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+    </div>
+    <div class="col-12">
+      <label for="scnd_email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="scnd_email" name="scnd_email" placeholder="Your email address" required>
+    </div>
+    <div class="col-12">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" name="address" placeholder="Your current address in details" required>
+    </div>
+   
+    <div class="col-12">
+      <label for="experience" class="form-label">Experience</label>
+      <select id="experience" name="experience" class="form-select" required>
+        <option selected>Choose...</option>
+        <option>N/A</option>
+        <option>Up to 6 Months</option>
+        <option>1-2 Years</option>
+        <option>2-3 Years</option>
+        <option>3-4 Years</option>
+        <option>More than 4 Years</option>
+
+      </select>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="check" id="check" required>
+        <label class="form-check-label" for="check">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-outline-primary ">Submit</button>
+    </div>
+  </form>
+</div> 
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
